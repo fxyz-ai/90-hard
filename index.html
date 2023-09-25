@@ -17,10 +17,11 @@
         }
         ul{
             display: inline-block;
+            list-style: none;
             height: auto;
         }
         ul>li{
-            list-style: none;
+            
             margin: 20px;
         }
         
@@ -56,6 +57,13 @@
             backdrop-filter: blur(4px);
             /* border: 2px solid black; */
         }
+    
+        @media screen and (max-width:320px){
+            ul{
+                width: 100%;
+            }
+        }
+            
         
     </style>
 
