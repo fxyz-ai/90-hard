@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 25rem;
+    border-radius: 10px;
+    padding: 5rem 2em;
+    box-shadow: 0px 0px 20px  black;
+    border: 1px solid black;
+}
+
+.login{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.username,
+.password{
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 3rem;
+    margin: 1rem;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+
+.username:focus,
+.password:focus{
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange{
+    0%{
+        border-color: yellow;
+        color: yellow;
+    }
+    10%{
+        border-color: greenyellow;
+        color: greenyellow;
+    }
+    20%{
+        border-color: cyan;
+        color: cyan;
+    }
+    30%{
+        border-color: purple;
+        color: purple;
+    }
+    40%{
+        border-color: hotpink;
+        color: hotpink;
+    }
+    50%{
+        border-color: orangered;
+        color: orangered;
+    }
+    60%{
+        border-color: greenyellow;
+        color: greenyellow;
+    }
+    70%{
+        border-color: cyan;
+        color: cyan;
+    }
+    80%{
+        border-color: purple;
+        color: purple;
+    }
+    90%{
+        border-color: hotpink;
+        color: hotpink;
+    }
+    100%{
+        border-color: orangered;
+        color: orangered;
+    }
+}
+
+.loginbtn {
+    background: transparent;
+    border: 2px solid whitesmoke;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.loginbtn:hover {
+    color: black;
+    background: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+
+@media screen and (max-width:450px){
+    .login-container{
+        width: 20rem;
+        height: 65%;
+    }
+    .username,
+    .password{
+        width: 10rem;
+        font-size: 0.8rem;
+        padding: 0.7rem 1.5rem;
+    }
+    .username:focus,
+    .password:focus{
+        width: 15rem;
+    }
+    .loginbtn{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:340px){
+    .login-container{
+        width: 15rem;
+        height: 25%;
+    }
+    .username,
+    .password{
+        width: 7rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+    .username:focus,
+    .password:focus{
+        width: 10rem;
+    }
+    .loginbtn{
+        font-size: 0.3rem;
+    }
+}
