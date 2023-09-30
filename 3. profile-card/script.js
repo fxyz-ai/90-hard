@@ -8,3 +8,7 @@ const toggleHeart = document.getElementById('heart');
             toggleHeart.style.color = 'white'
         }
     })
+
+function goBack() {
+      history.back();
+    }
