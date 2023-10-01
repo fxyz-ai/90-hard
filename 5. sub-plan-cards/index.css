@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: chocolate;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: antiquewhite;
+}
+
+.sub-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sub-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding: 0 4rem 2rem 4rem;
+    margin: 0 1rem 2rem 1rem;
+    overflow: hidden;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.sub-card:hover{
+    transform: scale(1.01);
+    box-shadow:  .8rem .8rem 1rem 0 brown;
+}
+
+.sub-card p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: royalblue;
+    font-weight: bold;
+}
+
+.order-btn{
+    border: none;
+    border: 2px solid royalblue;
+    background-color: transparent;
+    color: royalblue;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.sub-card:hover .order-btn{
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+.benefits li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    list-style: none;
+}
