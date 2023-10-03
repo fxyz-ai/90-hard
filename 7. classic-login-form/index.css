@@ -167,4 +167,12 @@ input:focus {
     .container{
         width: 75%;
     }
+
+    .container form input {
+        font-size: .8rem;
+    }
+    .container form i {
+        font-size: .8rem;
+        margin-right: 0.3rem;
+    }   
 }
