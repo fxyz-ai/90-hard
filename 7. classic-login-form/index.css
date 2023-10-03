@@ -165,7 +165,7 @@ input:focus {
 
 @media Screen and (max-width:450px) {
     .container{
-        width: 75%;
+        width: 85%;
     }
 
     .container form input {
