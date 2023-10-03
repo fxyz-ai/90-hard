@@ -162,3 +162,9 @@ input:focus {
 #signUp:hover {
     color: #8d68c5;
 }
+
+@media Screen and (max-width:450px) {
+    .container{
+        width: 75%;
+    }
+}
