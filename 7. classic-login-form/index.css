@@ -175,4 +175,10 @@ input:focus {
         font-size: .8rem;
         margin-right: 0.3rem;
     }   
+    .container form .forgotPassword{
+        font-size: .6rem;
+    }
+    .btn{
+        padding: 0.5rem 0.6rem;
+    }
 }
