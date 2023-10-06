@@ -50,7 +50,7 @@ ul li a::before{
     box-sizing: border-box;
     border-top: 2px solid white;
     border-left: 2px solid white;
-    transition: all .4s;
+    transition: all .6s;
 }
 
 ul li a::after {
@@ -63,7 +63,7 @@ ul li a::after {
     box-sizing: border-box;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
-    transition: all .4s;
+    transition: all .6s;
 }
 
 ul li a:hover::before,
