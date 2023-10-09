@@ -55,6 +55,7 @@ a:hover{
 
 .foot-item{
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 .foot-item ul{
     list-style: none;
@@ -81,5 +82,9 @@ a:hover{
         flex-direction: column;
         justify-content: flex-start;
         padding-left: 2rem;
+    }
+
+    .foot-item ul{
+        margin-bottom: 1.5rem;
     }
 }
