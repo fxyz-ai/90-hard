@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foot-container{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 1rem 0;
+    background-color: rgb(32, 32, 32);
+    bottom: 0;
+}
+
+.foot-container h2{
+    margin-bottom: .9rem;
+    position: relative;
+}
+.foot-container h2::after{
+    content: '';
+    width: 4rem;
+    height: .2rem;
+    background: #e65b00;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.foot-container p{
+    margin-bottom: .6em;
+    transition: all .3s linear;
+}
+
+.foot-container p:hover{
+    transition: all .3s linear;
+    transform: translateX(6px);
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #f46d13;
+}
+
+.foot-item{
+    margin-right: 1rem;
+}
+.foot-item ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-item ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-right: 1rem;
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+.foot-item ul li:hover{
+    color: #e65b00;
+    transform: scale(1.2);
+    transition: all .2s linear;
+}
+
+@media screen and (max-width: 400px) {
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+}
