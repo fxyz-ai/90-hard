@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="contact-section">
+        <h2 class="hading"> Register for the Bootcamp </h2>
+        <h5>Fill this and get a call or mail from us!</h5>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="text" name="email" id="email" placeholder="Email">
+        <input type="tel" name="ph" id="phone" placeholder="Phone">
+        <p> Preffered method of communication </p>
+        <div class="communication-method">
+            
+            <input type="radio" name="method" id=""> Email
+            <input type="radio" name="method" id=""> Phone
+        </div>
+        <label for="course">Select your preffered domain</label>
+        <select name="domain" id="course">
+            <option value="" disabled selected hidden>Please Select a domain</option>
+            <option value="aiml">Artificial Intelligence and Machine Learning</option>
+            <option value="datasci">Data Science</option>
+            <option value="iot">Internet of Things</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="web">Web Development</option>
+            <option value="cloud">Cloud Computing</option>
+            <option value="vr">Virtual Reality</option>
+        </select>
+        <button class="submit-btn"><a href="#"> Submit </a></button>
+    </section>
+    <p style="text-align: center; color: white; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">©[18-10-2023] mf</p>
+</body>
+</html>
