@@ -71,3 +71,18 @@ img{
             width: 15rem;
         }
 }
+@media screen and (max-width:370px){
+    .timer {
+            width: 95%;
+        }
+        .timer p{
+            margin: 0 0.5rem;
+        }
+        .colon {
+            font-size: 1rem;
+        }
+    
+        img {
+            width: 12rem;
+        }
+}
