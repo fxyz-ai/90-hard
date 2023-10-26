@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+body{
+    background-color: #FCDEBE;
+}
+.mob-navbar{
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    background-color: #D4D2A5;
+    border-radius: 1.5rem;
+}
+.mob-navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.mob-navbar ul li{
+    height: 35px;
+    width: 35px;
+    margin: 1rem;
+    color: #928779;
+    padding: 0 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+}
+
+.mob-navbar ul li:hover{
+    color: #D4D2A5;
+    transform: scale(1.2);
+    background-color: #928779;
+}
+
+.mob-navbar ul li i{
+    color: #928779;
+}
+.mob-navbar ul li:hover i {
+    border-radius: 50%;
+    color: #D4D2A5;
+}
+
+@media screen and (max-width:770px) {
+    .mob-navbar{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .mob-navbar {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .mob-navbar {
+        width: 95%;
+    }
+}
