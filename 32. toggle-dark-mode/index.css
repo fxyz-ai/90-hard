@@ -90,19 +90,3 @@ i {
 .head.dark{
     color: #fff;
 }
-
-@media screen and(max-width:780px) {
-    .bgMove{
-        top: 80%;
-    }
-}
-@media screen and(max-width:380px) {
-    .bgMove {
-        top: 80%;
-    }
-}
-@media screen and(max-width:430px) {
-    .bgMove {
-        top: 80%;
-    }
-}
