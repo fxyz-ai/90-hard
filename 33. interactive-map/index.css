@@ -10,9 +10,6 @@ body{
     align-items: center;
     flex-direction: column;
 }
-img{
-    width: 500px;
-}
 .state h2{
     text-align: center;
 }
