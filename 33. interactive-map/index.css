@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    width: 500px;
+}
+.state h2{
+    text-align: center;
+}
+.state p{
+    margin: 10px;
+}
