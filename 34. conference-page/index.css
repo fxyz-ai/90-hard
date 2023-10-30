@@ -84,6 +84,7 @@ form button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.venue{width: 500px;}
 
 form button:hover {
     background-color: #000;
@@ -110,5 +111,24 @@ form button:hover {
 
     nav li {
         margin: 10px 0;
+    }
+    .schedule{
+        flex-direction: column;
+    }
+    #registration{
+        left: 180px;
+    }
+}
+@media screen and (max-width:425px) {
+    .speakers{
+        flex-direction: column;
+    }
+    .venue{
+        width: 300px;
+        margin: 15px 0;
+    }
+    #registration{
+        left: 65px;
+        margin-bottom: 2rem;
     }
 }
