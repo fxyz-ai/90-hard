@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Laila:wght@500&family=Roboto+Condensed:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7f534b;
+}
+.services{
+    width: 100%;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem auto;
+    color: #e5f2c9;
+}
+.services>p{
+    font-family: 'Caudex', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #e5f2c9;
+}
+
+.s-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.s-item{
+    width: 20rem;
+    margin: 1rem 0;
+    padding: 10px;
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 0px rgb(0, 0, 0, 0.4);
+}
+
+.s-item:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px 0px rgb(0, 0, 0, 0.2);
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    border-radius: 50%;
+    background-color: #1f0318;
+    color: #e5f2c9;
+    align-items: center;
+    justify-content: center;
+}
+
+article p{
+    font-family: 'Caudex', sans-serif;
+    font-size: 1rem;
+    color: #e5f2c9;
+}
+
+article h2{
+    font-family: 'Laila', serif;
+    margin: 1rem 0;
+    text-align: center;
+    color: #e5f2c9;
+}
+
+.s-item:hover p,
+.s-item:hover h2 {
+    color: #000000;
+}
