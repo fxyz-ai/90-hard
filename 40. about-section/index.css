@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Habibi&family=Pridi&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pridi',sans-serif;
+}
+body{
+    background-color: #3454D1;
+}
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+.intro div{
+    width: 50%;
+}
+h2{
+    font-family: 'Habibi',sans-serif;
+    margin-bottom: 1rem;
+    color: #f2f3f4;
+}
+.intro img{
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.achieved{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.achieved>p{
+    margin: 2rem;
+    width: 49%;
+    text-align: center;
+}
+.achieved>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 72%;
+}
+.achieved>div>div p{
+    color: #F8C630;
+    font-size: 1.5rem;
+}
+.achieved .num{
+    font-size: 2rem;
+    font-family: 'Roboto',sans-serif;
+    color: #F8C630;
+    font-weight: bold;
+}
+.goal{
+    margin: 2rem 1.5rem;
+}
+.goal ul{
+    list-style: none;
+    margin: .4rem 0;
+}
+
+@media screen and (max-width:525px) {
+    img{
+        width: 200px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro div{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .achieved>p{
+        width: 80%;
+    }
+    .achieved>div{
+        width: 95%;
+    }
+}
