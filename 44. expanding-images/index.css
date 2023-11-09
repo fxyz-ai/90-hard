@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mukta',sans-serif;
 }
 body{
     background-color: snow;
@@ -52,8 +54,8 @@ h2 {
     bottom: 2px;
     left: 50%;
     font-size: 1.1rem;
+    font-weight: bold;
     transition: all 0.4s;
-    font-family: sans-serif;
     transform: translate(-50%, -50%);
 
 }
