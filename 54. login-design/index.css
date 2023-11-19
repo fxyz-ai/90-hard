@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(bgs.jpg);
+    background-attachment: fixed;
+}
+
+.container {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    width: 27%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 50%;
+}
+
+.container::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(bgs.jpg);
+    background-attachment: fixed;
+    filter: blur(2px);
+    border-radius: 50%;
+}
+
+.container h2 {
+    position: relative;
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 40px;
+    z-index: 2;
+    color: #5BC0EB;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type='text'],
+input[type='password']{
+    position: relative;
+    margin: 0;
+    z-index: 2;
+    color: white;
+    background-color: transparent;
+    padding:10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #8D99AE;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type='text']:focus,
+input[type='password']:focus{
+    border: 1px solid whitesmoke;
+    color: #DCDCDD;
+}
+
+.loginbtn {
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+    z-index: 2;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    padding: 10px 1rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.loginbtn:hover {
+    color: #031955;
+    background: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+
+@media screen and (max-width:890px) {
+    input[type='text'],
+    input[type='password']{
+        width: 60%;
+    }
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:520px){
+    input[type='text'],
+        input[type='password'] {
+            width: 70%;
+        }
+    
+        .container {
+            width: 70%;
+        }
+}
