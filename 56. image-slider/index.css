@@ -12,6 +12,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    background-color: #000;
 }
 
 .slider {
@@ -32,7 +33,7 @@ img {
     width: 100%;
     margin: 0 10px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgb(62 27 155);
+    box-shadow: 0 0 5px #2422DC;
 }
 
 .buttons {
