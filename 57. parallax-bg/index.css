@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Love+Ya+Like+A+Sister&family=Maitree&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #6B818C;
+}
+
+h1{
+    text-align: center;
+    color: #0B1E2F;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+h3{
+    font-size: 2rem;
+    color: #EAF2EF;
+    outline: #6B818C;
+    text-shadow: 2px 2px 6px #96BDC6;
+    font-family: 'Alegreya SC', serif;
+}
+.content {
+    padding: 2rem;
+    height: auto;
+}
+.content p{
+    text-align: center;
+    margin: 10px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: 'Maitree', serif;
+}
+
+.parallax {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("background.jpg");
+}
+.end{
+    text-align: center;
+
+}
+
+@media screen and (max-width: 420px) {
+    .content p{
+        font-size: 1rem;
+        line-height: normal;
+    }
+    .content{
+        padding: 1rem;
+    }
+    h3{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+}
