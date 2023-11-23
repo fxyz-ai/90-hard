@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Inconsolata&family=Khula&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+.main-section {
+    width: 500px;
+    border-radius: 10px;
+    margin: 100px auto;
+    padding: 10px 30px 60px;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+}
+
+input,
+section {
+    clear: both;
+    display: none;
+    padding-top: 10px;
+}
+
+label {
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    float: left;
+    padding: 10px 30px;
+    border-top: 2px solid transparent;
+    background-color: #ddd;
+    transition: all .5s;
+}
+
+#home-tab:checked~#home-content,
+#html-tab:checked~#html-content,
+#css-tab:checked~#css-content,
+#javascript-tab:checked~#javascript-content {
+    display: block;
+}
+
+input:checked+label {
+    font-weight: bold;
+    border-top-color: #3F84E5;
+    background-color: #fff;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #3F84E5;
+    font-family: 'Asul', serif;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Khula', sans-serif;
+}       

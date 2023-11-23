@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-section">
+        <h2>CSS Tabs</h2>
+        <input id="home-tab" type="radio" name="tabs" checked>
+        <label for="home-tab">Home</label>
+        <input id="html-tab" type="radio" name="tabs">
+        <label for="html-tab"> Method 1 </label>
+        <input id="css-tab" type="radio" name="tabs">
+        <label for="css-tab"> Method 2 </label>
+        <input id="javascript-tab" type="radio" name="tabs">
+        <label for="javascript-tab"> Method 3 </label>
+    
+        <section id="home-content">
+            <h3> Geeks Help </h3>
+            <p>Geeks Help is an independent website for Web Developers, Programmers, Computer Science students. We
+                provide syllabus and practical problem solutions online. </p>
+        </section>
+        <section id="html-content">
+            <h3> Flexbox Centering </h3>
+            <p>Utilizing Flexbox is one of the simplest ways to center a div both vertically and horizontally. Apply `display: flex;`
+            to the parent container and use `justify-content: center;` for horizontal centering and `align-items: center;` for
+            vertical centering. This method is effective and widely supported.</p>
+        </section>
+        <section id="css-content">
+            <h3> Grid Centering </h3>
+            <p>CSS Grid provides an easy method for centering a div. Set the parent container to `display: grid;` and use the
+            `place-items: center;` property. This method works well for centering content in both dimensions, and you can customize
+            the placement further with grid row and column properties.</p>
+        </section>
+        <section id="javascript-content">
+            <h3> Margin Auto Centering </h3>
+            <p>For horizontal centering, you can use the `margin: 0 auto;` approach. This method is particularly effective when you
+            have a fixed-width container. Setting the left and right margins to "auto" will evenly distribute the available space on
+            each side, effectively centering the div horizontally. However, it doesn't handle vertical centering without additional
+            considerations.</p>
+        </section>
+    </div>
+    <p style="text-align: center; color: black; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">©[23-11-2023] mf</p>
+
+</body>
+</html>
