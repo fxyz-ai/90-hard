@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+input {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#qrcode {
+    margin-top: 20px;
+}

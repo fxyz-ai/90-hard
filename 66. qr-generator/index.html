@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Code Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="script.js"></script>
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <label for="url">Enter URL:</label>
+            <input type="text" id="url" placeholder="https://example.com">
+            <button onclick="genQRCode()"> Generate </button>
+            <div id="qrcode"></div>
+        </div>
+        <p style="text-align: center; color: black; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); font-family: 'Poppins', sans-serif;">©[01-12-2023] mf</p>
+    </body>
+</html>
