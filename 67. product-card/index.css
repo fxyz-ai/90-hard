@@ -44,4 +44,43 @@ body {
 
 .product-title {
     font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+}
+
+.product-desc {
+    line-height: 18px;
+    margin-bottom: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.price {
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.strike {
+    display: inline;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: #7B66FF;
+    color: #fff;
 }
