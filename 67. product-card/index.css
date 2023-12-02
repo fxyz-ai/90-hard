@@ -1,1 +1,47 @@
-@import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5FBDFF;
+}
+
+.card-container {
+    width: 500px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.left {
+    background-image: url('');
+    background-size: cover;
+    width: 50%;
+    border-radius: 15px 0px 0px 15px;
+    background-repeat: no-repeat;
+}
+
+.right {
+    padding: 15px;
+    background-color: #96EFFF;
+    width: 50%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.tag {
+    margin: 10px 0;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-title {
+    font-size: 1.6rem;
+}
