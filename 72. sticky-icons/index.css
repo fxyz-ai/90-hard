@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.dummy-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BF4E30;
+    background-color: #fee715;
+    height: 100vh;
+    width: 100%;
+}
+.dummy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fee715;
+    background-color: #BF4E30;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar-social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar-social ul a {
+    text-decoration: none;
+}
+
+.sidebar-social li {
+    list-style: none;
+    color: #fff;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 17px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.5rem;
+}
+
+.sidebar-social li:hover {
+    width: 189px;
+}
+
+.sidebar-social li i {
+    margin-right: 22px;
+}
+
+.insta {
+    background-color: #df2f6d;
+}
+
+
+.ln {
+    background-color: #0077b5;
+}
+
+.twitter {
+    background-color: #26a7de;
+}
+
+.github {
+    background-color: #0f1113;
+}
+
+.sidebar-social .insta:hover {
+    background-color: #df2f6d;
+}
+
+.sidebar-social .ln:hover {
+    background-color: #0077b5;
+}
+
+.sidebar-social .twitter:hover {
+    background-color: #26a7de;
+}
+
+.sidebar-social .github:hover {
+    background-color: #0f1113;
+}
