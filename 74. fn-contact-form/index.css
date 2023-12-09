@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #eecbed;
+  background-color: #4CB944;
 }
 
 .container {
@@ -29,7 +29,7 @@ form {
 
 form h2 {
   text-align: center;
-  color: #e65b00;
+  color: #246EB9;
   margin-bottom: 20px;
 }
 
@@ -47,8 +47,8 @@ textarea {
 
 form button {
   background: white;
-  color: #e65b00;
-  border: 1px solid #e65b00;
+  color: #246EB9;
+  border: 1px solid #246EB9;
   padding: 15px;
   font-size: 1rem;
   outline: none;
@@ -61,7 +61,13 @@ form button {
 }
 
 form button:hover {
-  border: 1px solid #e65b00;
-  background: #e65b00;
+  border: 1px solid #246EB9;
+  background: #246EB9;
   color: white;
+}
+
+@media screen and (max-width:550px) {
+    form{
+        width: 90%;
+    }
 }
