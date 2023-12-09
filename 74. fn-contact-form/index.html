@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Contact Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="https://formsubmit.co/el/wufuhu" method="POST">
+            <h2> GET IN TOUCH </h2>
+            <input class="inputField" type="text" id="name" placeholder="Enter Your Name" required>
+            <input class="inputField" type="email" id="email" placeholder="Enter Your Email" required>
+            <input class="inputField" type="phone" id="phone" placeholder="Enter Your Phone Number" required>
+            <input type="hidden" name="_subject" value="Someone tried this form for it's functionality!">
+            <textarea class="inputField" id="message" rows="4" placeholder="Write Something"></textarea>
+            <button type="submit" id="send">Send</button>
+        </form>
+    </div>
+</body>
+</html>
