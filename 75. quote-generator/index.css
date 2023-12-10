@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Montserrat&family=Mukta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #F6AE2D;
+}
+
+.container {
+    text-align: center;
+}
+
+#quote-container {
+    max-width: 450px;
+    margin: auto 1.5rem;
+    border: 1px solid rgb(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    background: #2C302E;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,0.6);
+    color: #f2f3f4;
+}
+#quote-text {
+    font-family: 'Kalnia', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+#quote-author {
+    font-family: 'Mukta', cursive;
+    font-size: 1.2rem;
+}
+
+i {
+    font-size: 2.5rem;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: #2C302E;
+    background-color: #F6AE2D;
+    border: 1px solid #2C302E ;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: 'Montserrat', serif;
+    transition: all .4s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #A9CBB7;
+    color: #2C302E;
+}
