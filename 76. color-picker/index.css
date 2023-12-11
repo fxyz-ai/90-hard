@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Montserrat&family=Mukta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #dadada;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#colorPicker {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+#colorDisplay {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 4px rgb(0, 0, 0, 0.4);
+}
