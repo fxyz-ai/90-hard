@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bcb8acd2ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h2> Text Editor </h2>
+        <div class="top-area">
+            <ul>
+                <li id="bold">B</li>
+                <li id="italic">I</li>
+                <li id="underline">U</li>
+                <li id="strike"><i class="fa-solid fa-strikethrough"></i></li>
+                <li id="case"><i class="fa-solid fa-font"></i></li>
+                <li id="left"><i class="fa-solid fa-align-left"></i></li>
+                <li id="right"><i class="fa-solid fa-align-right"></i></li>
+                <li id="center"><i class="fa-solid fa-align-center"></i></li>
+                <li id="justify"><i class="fa-solid fa-align-justify"></i></li>
+                <li id="fonts">
+                    <div>
+                        <span>F</span>
+                        <i id="increase" class="fa-solid fa-arrow-up"></i>
+                        <i id="decrease" class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-area">
+            <textarea id="textInputArea" name="inputArea" value="raju"
+                placeholder="Enter text here to edit..."></textarea>
+        </div>
+    </div>
+    <p style="text-align: center; color: #1A1D1A; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); font-family: 'Poppins', sans-serif;">©[12-12-2023] mf</p>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2274A5;
+}
+
+.container {
+    border: 2px solid rgba(86, 83, 83, 0.401);
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #E5F2C9;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 15px auto;
+    color: #1A1D1A;
+    font-family: 'Poppins',sans-serif;
+}
+
+.top-area ul {
+    border: 1px dashed rgb(182, 168, 168);
+    border-radius: 5px;
+    padding: 5px 10px;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.top-area ul li {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-area ul li img {
+    height: 15px;
+}
+
+.active {
+    background-color: rgba(135, 207, 235, 0.655);
+    border-radius: 5px;
+}
+
+#color {
+    width: auto;
+    height: auto;
+}
+
+.content-area {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.content-area textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    height: 200px;
+    font-size: 14px;
+}
+
+#fonts {
+    height: auto;
+    width: auto;
+}
+
+#fonts div {
+    height: auto;
+    width: auto;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+
+#fonts span {
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#fonts i {
+    height: auto;
+    width: auto;
+    margin: 2px;
+    font-size: 1.3rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.case {
+    text-transform: uppercase;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.alignJustify {
+    text-align: justify;
+}
