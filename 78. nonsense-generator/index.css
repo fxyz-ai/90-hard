@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Poppins&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    font-size: 1rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D1B1E;
+}
+
+.container {    
+    text-align: center;
+    background-color: #427AA1;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.password-options, .password-display {
+    margin: 2rem 0;
+}
+
+.password-options>*, .password-display>*{
+    margin: 0.6rem 0;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px rgb(0,0,0);
+}
+
+#password {
+    width: 89%;
+    margin-top: 10px;
+}
+
+.password-display button {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:520px) {
+    .container{
+        width: 89%;
+    }
+}
