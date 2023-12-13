@@ -38,5 +38,5 @@ function copyToClipboard() {
     const passwordInput = document.getElementById('password');
     passwordInput.select();
     document.execCommand("copy");
-    alert('Password copied to clipboard!');
+    alert('Copied to clipboard!');
 }
