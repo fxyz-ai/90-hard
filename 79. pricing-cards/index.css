@@ -6,6 +6,9 @@
     font-family: 'Arvo', sans-serif;
 }
 
+body{
+    background-color: #CCC9A1;
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -14,7 +17,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #CCC9A1;
 }
 
 .item {
@@ -138,6 +140,7 @@ button {
 @media screen and (max-width:650px) {
     .container{
         height: auto;
+        margin: 3rem 0;
     }
 
     .item:hover img:nth-child(4){
