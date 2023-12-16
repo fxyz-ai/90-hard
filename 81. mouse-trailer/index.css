@@ -1,0 +1,29 @@
+body{
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mouse{
+  width: 30px;
+  aspect-ratio: 1/1;
+  background-color: #fee715;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  filter: blur(10px);
+  pointer-event: none;
+  opacity: 0;
+  transition: opacity .4s ease-out;
+}
+
+body:hover > #mouse {
+  opacity: 1;
+}
