@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.mc{
+    position: absolute;
+    bottom: 0;
+    width: 70vmin;
+    pointer-events: none;
+    filter: contrast(100%);
+    z-index: 5;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.title{
+    color: #222;
+    z-index: 2;
+    font-size: 13vmin;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: rgb(189, 189, 189) 0 0 10px;
+}
