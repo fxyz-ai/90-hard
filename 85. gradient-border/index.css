@@ -87,15 +87,21 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-image: radial-gradient(
-      rgba(255, 255, 255, 0.1) 2px, 
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.089) 2px, 
       transparent 1px
     );
-    background-position: 50% 50%;
-    background-size: 1.1rem 1.1rem;
+    background-size: .8rem .5rem;
     padding: 4rem;
+    border: 1px solid #9bbc383f;
     border-radius: 1.25rem;
     overflow: hidden;
+    animation: move 30s infinite linear;
+  }
+
+  @keyframes move{ 
+    from {background-position: 0% 0%;}
+    to {background-position: 0% -100%;}
   }
   
   .card-content > :is(h1, h3, p) {
