@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+:root {
+    --primary-color: #9BBC38;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;  
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1, h2, p {
+    margin: 0rem;
+  }
+  
+  .card {
+    width: 640px;
+    position: relative;
+    background-color: rgb(16 16 16);
+    border: 1px solid rgb(255 255 255 / 5%);
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+  .card:after {  
+    content: "";
+    height: 125px;
+    width: 2px;  
+    position: absolute;  
+    left: -1px;
+    top: 65%;
+    transition: all .6s ease;
+    background: linear-gradient(
+      transparent,
+      var(--primary-color),
+      transparent
+    );
+    opacity: 0;
+  }
+  
+  .card:after {  
+    top: 65%;
+    opacity: 0;
+  }
+  
+  .card:hover:after {
+    top: 10%;
+    opacity: 1;
+  }
+
+  .card:before {  
+    content: "";
+    height: 125px;
+    width: 2px;  
+    position: absolute;  
+    right: -1px;
+    bottom: 65%;
+    transition: all .6s ease;
+    background: linear-gradient(
+      transparent,
+      var(--primary-color),
+      transparent
+    );
+    opacity: 0;
+  }
+
+  .card:before {  
+    bottom: 65%;
+    opacity: 0;
+  }
+  
+  .card:hover:before {
+    bottom: 10%;
+    opacity: 1;
+  }
+  
+  .card-content {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 2px, 
+      transparent 1px
+    );
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    padding: 4rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  
+  .card-content > :is(h1, h3, p) {
+    text-align: center;
+  }
+  
+  .card-content > h1 {
+    color: var(--primary-color); 
+    font-size: 2.6rem;
+  }
+  
+  .card-content > p {
+    color: rgb(250 249 246);
+    line-height: 1.5rem;
+  }
+  
+  @media(max-width: 700px) {
+    .card {
+      width: calc(100% - 2rem);
+      margin: 0rem 1rem;
+      padding: 0.75rem;
+      border-radius: 1rem;
+    }
+  }
+
+  @media(max-width: 520px) {
+    .card-content {
+      padding: 3rem;
+    }
+    
+    .card-content > h1 {
+      font-size: 2.2rem;
+    }
+  }
