@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Scroll Animation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="container">
+          <div class="div">
+            Welcome!
+          </div>
+          <div class="div" data-aos="fade-left">
+            Scroll down
+          </div>
+          <div class="div" data-aos="fade-right">
+            This was made by...
+          </div>
+          <div class="div"  data-aos="fade-up">
+            AOS Library
+          </div>
+          <div class="div"  data-aos="zoom-in">
+            Animate On Scroll
+          </div>
+          <div class="div" data-aos="flip-up">
+            Thank you!
+          </div>
+    </div>
+    <p style="text-align: center; color: #111; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); font-family: 'Poppins', sans-serif;">©[23-12-2023] mf</p>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+  </body>
+</html>
