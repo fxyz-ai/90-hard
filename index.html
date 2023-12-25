@@ -3,43 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 90 Hard</title>
+    <title> 90 Hard </title>
     <link rel="icon" href="Digital sign.png">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&family=Signika+Negative:wght@500&family=Ubuntu&display=swap');
         html{
             scroll-behavior: smooth;
+            color: #f2f3f4;
         }
 
         body{
             text-align: center;
+            background: #212121;
+            color: #f2f3f4;
         }
         h1{
             font-family: 'Signika Negative', sans-serif;
+            font-size: 3rem;
         }
-        
-        .proj-list{
-            list-style: none;
-            margin: 30px 0;
-        }
-        
-        .proj-list>a{
-            font-family: 'Quattrocento', sans-serif;
-            text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            padding: 6px;
-            border-radius: 20px;
-            box-shadow: 2px 4px 5px gray;
-            transition: all 0.8s;
+        .projects{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
-        .proj-list>a:hover{
-            text-decoration: none;
-            color: white;
-            background-color: black;
-            padding: 6px;
-            border-radius: 20px;
+        .proj-item {
+            position: relative;
+            width: 350px;
+            aspect-ratio: 1.903735632;
+            background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 1rem;
+            perspective: 1000px;
+            box-shadow: 0 0 0 5px #ffffff80;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+
+        .proj-item img {
+            width: 100%;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .proj-item:hover {
+            transform: scale(1.06);
+            box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .proj-item:hover .content {
+            transform: rotateX(0deg);
+        }
+
+        .proj-title {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Ubuntu',serif;
+        }
+
+        .proj-item:hover img {
+            scale: 0;
+        }
+
+        .proj-desc {
+            margin: 10px 0 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
         .contact{
             position: fixed;
             bottom: 0;
@@ -66,116 +116,916 @@
              */
         
     </style>
+    <script src="https://kit.fontawesome.com/bcb8acd2ad.js" crossorigin="anonymous"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&family=Quattrocento&family=Signika+Negative&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-SXceuf0czITiDsFtmPf9ZJy8DE3HcTcfhO8QLZqZbfMy7t+xdAKcFyTobFCeM2bySw+TbFI3M2NhLb3K2n4Pcbw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        
 
 </head>
 <body>
-    <h1 id="head">90 days 90 projects</h1>
+    <h1 id="head">90 Hard</h1>
     <marquee>
-        <p style="font-size: 20px; font-family: 'Libre Baskerville', sans-serif;">Taking on a challenge: 90 projects in 90 days. Each day, a new project. Ready to dive into creativity and hard work, one
-        day at a time! Let's go 90 HARD!!!</p>
+        <p style="font-size: 20px; font-family: 'Libre Baskerville', sans-serif;"> Each day, I took on a new project, diving into creativity and hard work. It was a fulfilling experience, and I am proud to have accomplished this feat. You can check out the projects I completed during this challenge.</p>
     </marquee>
-        <div style="padding-bottom: 100px;">
-            <li class="proj-list"><a href="1. responsive-navbar/index.html">1. Responsive Navigation Bar</a></li>
-            <li class="proj-list"><a href="2. animated-login/index.html">2. Animated Login Form</a></li>
-            <li class="proj-list"><a href="3. profile-card/index.html">3. Professional Profile Card</a></li>
-            <li class="proj-list"><a href="4.  contact-form/index.html">4. Contact Form</a></li>
-            <li class="proj-list"><a href="5. sub-plan-cards/index.html">5. Subscription Plan Cards</a></li>
-            <li class="proj-list"><a href="6. res-3d-buttons/index.html">6. Responsive 3D Buttons</a></li>
-            <li class="proj-list"><a href="7. classic-login-form/index.html">7. Classic Login Form</a></li>
-            <li class="proj-list"><a href="8. simple-product-card/index.html">8. Simple Product Card</a></li>
-            <li class="proj-list"><a href="9. team-page-design/index.html">9. Our Team Page</a></li>
-            <li class="proj-list"><a href="10. anim-navbar/index.html">10. Animated Navigation Bar</a></li>
-            <li class="proj-list"><a href="11. popup-menu/index.html">11. Popup Menu</a></li>
-            <li class="proj-list"><a href="12. sidebar-menu/index.html">12. Sidebar Menu</a></li>
-            <li class="proj-list"><a href="13. responsive-footer/index.html">13. Responsive Footer</a></li>
-            <li class="proj-list"><a href="14. flippin-cards/index.html">14. Flipping Product Cards</a></li>
-            <li class="proj-list"><a href="15. stud-reg-form/index.html">15. Student Registration Form</a></li>
-            <li class="proj-list"><a href="16. reveal-card/index.html">16. Revealing Card Effect</a></li>
-            <li class="proj-list"><a href="17. progress-bar/index.html">17. Progress Bar</a></li>
-            <li class="proj-list"><a href="18. coming-soon/index.html">18. Coming Soon Page</a></li>
-            <li class="proj-list"><a href="19. blog-page/index.html">19. Blog Page Design</a></li>
-            <li class="proj-list"><a href="20. social-cards/index.html">20. Social Media Profiles</a></li>
-            <li class="proj-list"><a href="21. char-counter/index.html">21. Character & Word Counter</a></li>
-            <li class="proj-list"><a href="22. reg-form/index.html">22. Registration Form Design</a></li>
-            <li class="proj-list"><a href="23. drop-navbar/index.html">23. DropDown Navigation Bar</a></li>
-            <li class="proj-list"><a href="24. soon-timer/index.html">24. Coming Soon Page w/Timer</a></li>
-            <li class="proj-list"><a href="25. agency-landing/index.html">25. Agency Landing Page</a></li>
-            <li class="proj-list"><a href="26. cafe-page/index.html">26. Cafe Website Landing Page</a></li>
-            <li class="proj-list"><a href="27. review-design/index.html">27. Customer Review Design</a></li>
-            <li class="proj-list"><a href="28. text-to-speech/index.html">28. Text To Speech Converter</a></li>
-            <li class="proj-list"><a href="29. image-carousel/index.html">29. Simple Image Carousel</a></li>
-            <li class="proj-list"><a href="30. mob-navbar/index.html">30. Mobile Navigation Bar</a></li>
-            <li class="proj-list"><a href="31. tribute-page/index.html">31. Tribute Page</a></li>
-            <li class="proj-list"><a href="32. toggle-dark-mode/index.html">32. Toggle Dark Mode</a></li>
-            <li class="proj-list"><a href="33. interactive-map/index.html">33. Interactive Map</a></li>
-            <li class="proj-list"><a href="34. conference-page/index.html">34. Conference Registration Page</a></li>
-            <li class="proj-list"><a href="35. expense-track/index.html">35. Expense Tracker</a></li>
-            <li class="proj-list"><a href="36. wave-anim/index.html">36. Wave Animation</a></li>
-            <li class="proj-list"><a href="37. social-cards/index.html">37. Profile Cards Design</a></li>
-            <li class="proj-list"><a href="38. services-section/index.html">38. Services Section Design</a></li>
-            <li class="proj-list"><a href="39. error-page/index.html">39. 404 Page Design</a></li>
-            <li class="proj-list"><a href="40. about-section/index.html">40. About Section Design</a></li>
-            <li class="proj-list"><a href="41. testimonial-slider/index.html">41. Testimonial Slider</a></li>
-            <li class="proj-list"><a href="42. social-icons/index.html">42. Social Media Icons Design</a></li>
-            <li class="proj-list"><a href="43. horizontal-scroll/index.html">43. Horizontal Scrolling</a></li>
-            <li class="proj-list"><a href="44. expanding-images/index.html">44. Expanding Images Gallery</a></li>
-            <li class="proj-list"><a href="45. accordion/index.html">45. Accordion Design</a></li>
-            <li class="proj-list"><a href="46. wiz-navigation/index.html">46. Wizard Navigation</a></li>
-            <li class="proj-list"><a href="47. review-cards/index.html">47. Review Cards Design</a></li>
-            <li class="proj-list"><a href="48. emoji-gen/index.html">48. Random Emoji Generator</a></li>
-            <li class="proj-list"><a href="49. digital-clock/index.html">49. Digital Clock</a></li>
-            <li class="proj-list"><a href="50. blog-cards/index.html">50. Blog Post Cards Design</a></li>
-            <li class="proj-list"><a href="51. to-do/index.html">51. Simple To-Do List</a></li>
-            <li class="proj-list"><a href="52. info-card/index.html">52. Info Card Design</a></li>
-            <li class="proj-list"><a href="53. id-card-design/index.html">53. Identity Card Design</a></li>
-            <li class="proj-list"><a href="54. login-design/index.html">54. Login Page Design</a></li>
-            <li class="proj-list"><a href="55. auto-scroll/index.html">55. Auto Scroll Carousel</a></li>
-            <li class="proj-list"><a href="56. image-slider/index.html">56. Image Slider Gallery</a></li>
-            <li class="proj-list"><a href="57. parallax-bg/index.html">57. Parallax Background</a></li>
-            <li class="proj-list"><a href="58. tabs/index.html">58. CSS Tabs</a></li>
-            <li class="proj-list"><a href="59. custom-dropdown/index.html">59. Custom DropDown Selection</a></li>
-            <li class="proj-list"><a href="60. quiz/index.html">60. SimpleQuiz</a></li>
-            <li class="proj-list"><a href="61. res-mobile-nav/index.html">61. Responsive Mobile Navigation</a></li>
-            <li class="proj-list"><a href="62. bio-page-design/index.html">62. Biography Page Design</a></li>
-            <li class="proj-list"><a href="63. fb-login-clone/index.html">63. Facebook Login Design</a></li>
-            <li class="proj-list"><a href="64. dashboard-design/index.html">64. Dashboard Design</a></li>
-            <li class="proj-list"><a href="65. res-footer-design/index.html">65. Responsive Footer Design</a></li>
-            <li class="proj-list"><a href="66. qr-generator/index.html">66. QR Code Generator</a></li>
-            <li class="proj-list"><a href="67. product-card/index.html">67. Product Card Design</a></li>
-            <li class="proj-list"><a href="68. our-services/index.html">68. Our Services Section</a></li>
-            <li class="proj-list"><a href="69. survey-form/index.html">69. Survey Form</a></li>
-            <li class="proj-list"><a href="70. grid-cards/index.html">70. Responsive Grid Cards</a></li>
-            <li class="proj-list"><a href="71. login-pass-hide/index.html">71. Login with Show Password</a></li>
-            <li class="proj-list"><a href="72. sticky-icons/index.html">72. Sticky Social Media Icons</a></li>
-            <li class="proj-list"><a href="73. card-hover/index.html">73. Card Hover Effect</a></li>
-            <li class="proj-list"><a href="74. fn-contact-form/index.html">74. Functional Contact Form</a></li>
-            <li class="proj-list"><a href="75. quote-generator/index.html">75. Random Quote Generator</a></li>
-            <li class="proj-list"><a href="76. color-picker/index.html">76. Color Picker</a></li>
-            <li class="proj-list"><a href="77. text-editor/index.html">77. Simple Text Editor</a></li>
-            <li class="proj-list"><a href="78. nonsense-generator/index.html">78. Nonsense Sequence Generator</a></li>
-            <li class="proj-list"><a href="79. pricing-cards/index.html">79. Pricing Cards</a></li>
-            <li class="proj-list"><a href="80. google-home/index.html">80. Google Homepage Design</a></li>
-            <li class="proj-list"><a href="81. mouse-trailer/index.html">81. Mouse Trailer Effect</a></li>
-            <li class="proj-list"><a href="82. input-stepper/index.html">82. Input Stepper</a></li>
-            <li class="proj-list"><a href="83. mouse-move-gallery/index.html">83. Mousemove Image Gallery</a></li>
-            <li class="proj-list"><a href="84. bg-slide/index.html">84. Background Slider</a></li>
-            <li class="proj-list"><a href="85. gradient-border/index.html">85. Gradient Border</a></li>
-            <li class="proj-list"><a href="86. error-page/index.html">86. 404 Error Page Design</a></li>
-            <li class="proj-list"><a href="87. menu-effect/index.html">87. Hamburger NavBar Effect</a></li>
-            <li class="proj-list"><a href="88. onscroll-animation/index.html">88. On Scroll Animation</a></li>
-            <li class="proj-list"><a href="89. perpetual-motion/index.html">89. Perpetual Motion Loader</a></li>
+        <div class="projects" style="padding-bottom: 100px;">
+            <div class="proj-item">
+                <img src="proj-ops/1.navbar.png" alt="">
+                <a href="1. responsive-navbar/index.html">
+                    <div class="content">
+                      <p class="proj-title">1. Responsive Navigation Bar</p>
+                      <p class="proj-desc">Adapts effortlessly to any screen size.</p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/2.animlogin.png" alt="">                
+                <a href="2. animated-login/index.html">
+                    <div class="content">
+                      <p class="proj-title">2. Animated Login Form</p>
+                      <p class="proj-desc">Captures attention with a dynamic entrance.</p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/3.profilecard.png" alt="">
+                <a href="3. profile-card/index.html">
+                    <div class="content">
+                      <p class="proj-title">3. Professional Profile Card</p>
+                      <p class="proj-desc">Stylishly showcase your skills and experience.</p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/4.contform.png" alt="">
+                <a href="4.  contact-form/index.html">
+                    <div class="content">
+                      <p class="proj-title">4.Simple Contact Form</p>
+                      <p class="proj-desc">Make it easy for people to reach you.</p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/5.subcards.png" alt="">
+                <a href="5. sub-plan-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">5. Subscription Plan Cards</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/6.threedbtn.png" alt="">
+                <a href="6. res-3d-buttons/index.html">
+                    <div class="content">
+                      <p class="proj-title">6. Responsive 3D Buttons</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/7.oglogin.png" alt="">
+                <a href="7. classic-login-form/index.html">
+                    <div class="content">
+                      <p class="proj-title">7. Classic Login Form</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/8.prodcard.png" alt="">
+                <a href="8. simple-product-card/index.html">
+                    <div class="content">
+                      <p class="proj-title">8. Simple Product Card</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/9.teampage.png" alt="">
+                <a href="9. team-page-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">9. Our Team Page</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/10.animnav.png" alt="">
+                <a href="10. anim-navbar/index.html">
+                    <div class="content">
+                      <p class="proj-title">10. Animated Navigation Bar</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/11.popup.png" alt="">
+                <a href="11. popup-menu/index.html">
+                    <div class="content">
+                      <p class="proj-title">11. Popup Menu</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/12.sidebar.png" alt="">
+                <a href="12. sidebar-menu/index.html">
+                    <div class="content">
+                      <p class="proj-title">12. Sidebar Menu</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/13.footer.png" alt="">
+                <a href="13. responsive-footer/index.html">
+                    <div class="content">
+                      <p class="proj-title">13. Responsive Footer</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/14.flipcards.png" alt="">
+                <a href="14. flippin-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">14. Flipping Product Cards</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/15.studentreg.png" alt="">
+                <a href="15. stud-reg-form/index.html">
+                    <div class="content">
+                      <p class="proj-title">15. Student Registration Form</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/16.revealcards.png" alt="">
+                <a href="16. reveal-card/index.html">
+                    <div class="content">
+                      <p class="proj-title">16. Revealing Card Effect</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/17.progbar.png" alt="">
+                <a href="17. progress-bar/index.html">
+                    <div class="content">
+                      <p class="proj-title">17. Progress Bar</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/18.comesoon.png" alt="">
+                <a href="18. coming-soon/index.html">
+                    <div class="content">
+                      <p class="proj-title">18. Coming Soon Page</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/19.blogpage.png" alt="">
+                <a href="19. blog-page/index.html">
+                    <div class="content">
+                      <p class="proj-title">19. Blog Page Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/20.socialprofile.png" alt="">
+                <a href="20. social-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">20. Social Media Profiles</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/21.charcount.png" alt="">
+                <a href="21. char-counter/index.html">
+                    <div class="content">
+                      <p class="proj-title">21. Character & Word Counter</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/22.regform.png" alt="">
+                <a href="22. reg-form/index.html">
+                    <div class="content">
+                      <p class="proj-title">22. Registration Form Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/23.dropdownnav.png" alt="">
+                <a href="23. drop-navbar/index.html">
+                    <div class="content">
+                      <p class="proj-title">23. DropDown Navigation Bar</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/24.timersoon.png" alt="">
+                <a href="24. soon-timer/index.html">
+                    <div class="content">
+                      <p class="proj-title">24. Coming Soon Page w/Timer</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/25.landingagency.png" alt="">
+                <a href="25. agency-landing/index.html">
+                    <div class="content">
+                      <p class="proj-title">25. Agency Landing Page</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/26.cafepage.png" alt="">
+                <a href="26. cafe-page/index.html">
+                    <div class="content">
+                      <p class="proj-title">26. Cafe Website Landing Page</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/27.review.png" alt="">
+                <a href="27. review-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">27. Customer Review Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/28.ttspage.png" alt="">
+                <a href="28. text-to-speech/index.html">
+                    <div class="content">
+                      <p class="proj-title">28. Text To Speech Converter</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/29.carousel.png" alt="">
+                <a href="29. image-carousel/index.html">
+                    <div class="content">
+                      <p class="proj-title">29. Simple Image Carousel</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/30.mobnav.png" alt="">
+                <a href="30. mob-navbar/index.html">
+                    <div class="content">
+                      <p class="proj-title">30. Mobile Navigation Bar</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/31.tributepage.png" alt="">
+                <a href="31. tribute-page/index.html">
+                    <div class="content">
+                      <p class="proj-title">31. Tribute Page</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/32.toggledark.png" alt="">
+                <a href="32. toggle-dark-mode/index.html">
+                    <div class="content">
+                      <p class="proj-title">32. Toggle Dark Mode</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/33.mapinteraction.png" alt="">
+                <a href="33. interactive-map/index.html">
+                    <div class="content">
+                      <p class="proj-title">33. Interactive Map</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/34.confreg.png" alt="">
+                <a href="34. conference-page/index.html">
+                    <div class="content">
+                      <p class="proj-title">34. Conference Registration Page</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/35.expensetrack.png" alt="">
+                <a href="35. expense-track/index.html">
+                    <div class="content">
+                      <p class="proj-title">35. Expense Tracker</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/36.waveanim.png" alt="">
+                <a href="36. wave-anim/index.html">
+                    <div class="content">
+                      <p class="proj-title">36. Wave Animation</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/37.socialcard.png" alt="">
+                <a href="37. social-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">37. Profile Cards Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/38.ourservices.png" alt="">
+                <a href="38. services-section/index.html">
+                    <div class="content">
+                      <p class="proj-title">38. Services Section Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/39.errorpage.png" alt="">
+                <a href="39. error-page/index.html">
+                    <div class="content">
+                      <p class="proj-title">39. 404 Page Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/40.aboutus.png" alt="">
+                <a href="40. about-section/index.html">
+                    <div class="content">
+                      <p class="proj-title">40. About Section Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/41.testislider.png" alt="">
+                <a href="41. testimonial-slider/index.html">
+                    <div class="content">
+                      <p class="proj-title">41. Testimonial Slider</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/42.socialicons.png" alt="">
+                <a href="42. social-icons/index.html">
+                    <div class="content">
+                      <p class="proj-title">42. Social Media Icons Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/43.horislider.png" alt="">
+                <a href="43. horizontal-scroll/index.html">
+                    <div class="content">
+                      <p class="proj-title">43. Horizontal Scrolling</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/44.expandimgs.png" alt="">
+                <a href="44. expanding-images/index.html">
+                    <div class="content">
+                      <p class="proj-title">44. Expanding Images Gallery</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/45.accordion.png" alt="">
+                <a href="45. accordion/index.html">
+                    <div class="content">
+                      <p class="proj-title">45. Accordion Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/46.wiznav.png" alt="">
+                <a href="46. wiz-navigation/index.html">
+                    <div class="content">
+                      <p class="proj-title">46. Wizard Navigation</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/47.reviewcards.png" alt="">
+                <a href="47. review-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">47. Review Cards Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/48.emojigen.png" alt="">
+                <a href="48. emoji-gen/index.html">
+                    <div class="content">
+                      <p class="proj-title">48. Random Emoji Generator</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/49.clock.png" alt="">
+                <a href="49. digital-clock/index.html">
+                    <div class="content">
+                      <p class="proj-title">49. Digital Clock</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/50.bloggs.png" alt="">
+                <a href="50. blog-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">50. Blog Post Cards Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/51.todolist.png" alt="">
+                <a href="51. to-do/index.html">
+                    <div class="content">
+                      <p class="proj-title">51. Simple To-Do List</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/52.infocard.png" alt="">
+                <a href="52. info-card/index.html">
+                    <div class="content">
+                      <p class="proj-title">52. Info Card Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/53.iddcard.png" alt="">
+                <a href="53. id-card-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">53. Identity Card Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/54.logindesign.png" alt="">
+                <a href="54. login-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">54. Login Page Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/55.autocaroiusel.png" alt="">
+                <a href="55. auto-scroll/index.html">
+                    <div class="content">
+                      <p class="proj-title">55. Auto Scroll Carousel</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/56.slidergallery.png" alt="">
+                <a href="56. image-slider/index.html">
+                    <div class="content">
+                      <p class="proj-title">56. Image Slider Gallery</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/57.parallaxbg.png" alt="">
+                <a href="57. parallax-bg/index.html">
+                    <div class="content">
+                      <p class="proj-title">57. Parallax Background</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/58.tabscss.png" alt="">
+                <a href="58. tabs/index.html">
+                    <div class="content">
+                      <p class="proj-title">58. CSS Tabs</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/59.customdropdown.png" alt="">
+                <a href="59. custom-dropdown/index.html">
+                    <div class="content">
+                      <p class="proj-title">59. Custom DropDown Selection</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/60.quizo.png" alt="">
+                <a href="60. quiz/index.html">
+                    <div class="content">
+                      <p class="proj-title">60. Simple Quiz</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/61.mobnavv.png" alt="">
+                <a href="61. res-mobile-nav/">
+                    <div class="content">
+                      <p class="proj-title">61. Responsive Mobile Navigation</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/62.biopage.png" alt="">
+                <a href="62. bio-page-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">62. Biography Page Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/63.fblogin.png" alt="">
+                <a href="63. fb-login-clone/index.html">
+                    <div class="content">
+                      <p class="proj-title">63. Facebook Login Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/64.dashboard.png" alt="">
+                <a href="64. dashboard-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">64. Dashboard Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/65.foooters.png" alt="">
+                <a href="65. res-footer-design/index.html">
+                    <div class="content">
+                      <p class="proj-title">65. Responsive Footer Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/66.qrgen.png" alt="">
+                <a href="66. qr-generator/index.html">
+                    <div class="content">
+                      <p class="proj-title">66. QR Code Generator</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/67.prodcard.png" alt="">
+                <a href="67. product-card/index.html">
+                    <div class="content">
+                      <p class="proj-title">67. Product Card Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/68.servicessec.png" alt="">
+                <a href="68. our-services/index.html">
+                    <div class="content">
+                      <p class="proj-title">68. Our Services Section</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/69.surveyform.png" alt="">
+                <a href="69. survey-form/index.html">
+                    <div class="content">
+                      <p class="proj-title">69. Survey Form</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/70.gridcards.png" alt="">
+                <a href="70. grid-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">70. Responsive Grid Cards</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/71.loginwhide.png" alt="">
+                <a href="71. login-pass-hide/index.html">
+                    <div class="content">
+                      <p class="proj-title">71. Login with Show Password</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/72.stickyicons.png" alt="">
+                <a href="72. sticky-icons/index.html">
+                    <div class="content">
+                      <p class="proj-title">72. Sticky Social Media Icons</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/73.cardshover.png" alt="">
+                <a href="73. card-hover/index.html">
+                    <div class="content">
+                      <p class="proj-title">73. Card Hover Effect</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/74.fncontform.png" alt="">
+                <a href="74. fn-contact-form/index.html">
+                    <div class="content">
+                      <p class="proj-title">74. Functional Contact Form</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/75.quotegen.png" alt="">
+                <a href="75. quote-generator/index.html">
+                    <div class="content">
+                      <p class="proj-title">75. Random Quote Generator</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/76.colorpick.png" alt="">
+                <a href="76. color-picker/index.html">
+                    <div class="content">
+                
+                        <p class="proj-title">76. Color Picker</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/77.texteditor.png" alt="">
+                <a href="77. text-editor/index.html">
+                    <div class="content">
+                      <p class="proj-title">77. Simple Text Editor</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/78.sequencegen.png" alt="">
+                <a href="78. nonsense-generator/index.html">
+                    <div class="content">
+                      <p class="proj-title">78. Nonsense Sequence Generator</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/79.pricecards.png" alt="">
+                <a href="79. pricing-cards/index.html">
+                    <div class="content">
+                      <p class="proj-title">79. Pricing Cards</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/80.goglehome.png" alt="">
+                <a href="80. google-home/index.html">
+                    <div class="content">
+                      <p class="proj-title">80. Google Homepage Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/81.mousetrailer.png" alt="">
+                <a href="81. mouse-trailer/index.html">
+                    <div class="content">
+                      <p class="proj-title">81. Mouse Trailer Effect</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/82.ipstepper.png" alt="">
+                <a href="82. input-stepper/index.html">
+                    <div class="content">
+                      <p class="proj-title">82. Input Stepper</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/83.mousemovegal.png" alt="">
+                <a href="83. mouse-move-gallery/index.html">
+                    <div class="content">
+                      <p class="proj-title">83. Mousemove Image Gallery</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/84.bgslider.png" alt="">
+                <a href="84. bg-slide/index.html">
+                    <div class="content">
+                      <p class="proj-title">84. Background Slider</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/85.gradborder.png" alt="">
+                <a href="85. gradient-border/index.html">
+                    <div class="content">
+                      <p class="proj-title">85. Gradient Border</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/86.404page.png" alt="">
+                <a href="86. error-page/index.html">
+                    <div class="content">
+                      <p class="proj-title">86. 404 Error Page Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/87.menueffect.png" alt="">
+                <a href="87. menu-effect/index.html">
+                    <div class="content">
+                      <p class="proj-title">87. Hamburger NavBar Effect</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/88.onscroll.png" alt="">
+                <a href="88. onscroll-animation/index.html">
+                    <div class="content">
+                      <p class="proj-title">88. On Scroll Animation</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/89.loader.png" alt="">
+                <a href="89. perpetual-motion/index.html">
+                    <div class="content">
+                      <p class="proj-title">89. Perpetual Motion Loader</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
+
+              <div class="proj-item">
+                <img src="proj-ops/90.fin.png" alt="">
+                <a href="#head" target="_parent">
+                    <div class="content">
+                      <p class="proj-title">90. Projects Page Design</p>
+                      <p class="proj-desc"></p>
+                    </div>
+                </a>
+              </div>
         </div>
         
         <!-- <div style="background-color: white; color: white; margin-bottom: 100px;"><h1>Hello</h1></div> -->
@@ -184,36 +1034,14 @@
     <div class="contact">
         <li class="cont-icon">
             <!--github icon-->
-            <a href="https://github.com/fxyz-ai/90-hard" style="text-decoration: none;" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                    viewBox="0 0 448 512"> 
-                   <style>
-                        svg {
-                            fill: #000000
-                        }
-                    </style>
-                    <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z" />
-                </svg>
-            </a>
+            <a href="https://github.com/fxyz-ai/90-hard" style="text-decoration: none;" target="_blank"><i class="fa-brands fa-github" style="color: #000;"></i></a>
             &nbsp;
             &nbsp;
             <!--linked-icon-->
-            <a href="https://www.linkedin.com/in/fxyz-ai-m6089/" style="text-decoration: none;" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                    viewBox="0 0 448 512">
-                    <style>
-                        svg {
-                            fill: #000000
-                        }
-                    </style>
-                    <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                </svg>
-            </a>
+            <a href="https://www.linkedin.com/in/fxyz-ai-m6089/" style="text-decoration: none;" target="_blank"><i class="fa-brands fa-linkedin" style="color: #000;"></i></a>
         </li>
         <br>
-        <p style="text-align: center; color: black; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); font-family: 'Poppins', sans-serif;">©[27-09-2023] mf</p>
+        <p style="text-align: center; color: #000; font-weight: 800; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); font-family: 'Poppins', sans-serif;">©[27-09-2023] mf</p>
     </div>
     <!-- <a href="#head">
     <div class="top-btn">
